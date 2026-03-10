@@ -1,0 +1,33 @@
+{
+    "name": "com.ludocore.toolkit",
+    "version": "0.1.0",
+    "displayName": "Ludocore Toolkit",
+    "description": "Reusable game development toolkit for Unity \u2014 sensors, movement, lifecycle, state, spawning, and more.",
+    "unity": "2022.3",
+    "dependencies": {
+        "com.unity.inputsystem": "1.7.0",
+        "com.unity.ai.navigation": "1.1.5"
+    },
+    "keywords": [
+        "game",
+        "toolkit",
+        "sensors",
+        "movement",
+        "lifecycle"
+    ],
+    "author": {
+        "name": "Ludocore"
+    },
+    "samples": [
+        {
+            "displayName": "Demo Scenes",
+            "description": "Living Entities and Trophic Cascade demo scenes with prefabs and data assets.",
+            "path": "Samples~/DemoScenes"
+        },
+        {
+            "displayName": "Tutorials",
+            "description": "Step-by-step Living Cells tutorials.",
+            "path": "Samples~/Tutorials"
+        }
+    ]
+}
