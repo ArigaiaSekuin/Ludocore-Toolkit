@@ -59,14 +59,14 @@ namespace Ludocore
 
             Vector3 away = transform.position - threat;
             if (away.sqrMagnitude < 0.0001f)
-                away = Random.onUnitSphere;
+                away = UnityEngine.Random.onUnitSphere;
 
             away.y = 0f;
             away.Normalize();
 
-            float yaw = Random.Range(-randomAngle, randomAngle);
+            float yaw = UnityEngine.Random.Range(-randomAngle, randomAngle);
             Vector3 dir = Quaternion.Euler(0f, yaw, 0f) * away;
-            float dist = Random.Range(minDistance, range);
+            float dist = UnityEngine.Random.Range(minDistance, range);
             Vector3 desired = transform.position + dir * dist;
 
             if (TrySetDestination(desired)) return;
@@ -74,9 +74,9 @@ namespace Ludocore
             // Fallback: try random directions
             for (int i = 0; i < 4; i++)
             {
-                float angle = Random.Range(-180f, 180f);
+                float angle = UnityEngine.Random.Range(-180f, 180f);
                 Vector3 fallbackDir = Quaternion.Euler(0f, angle, 0f) * away;
-                Vector3 fallbackPos = transform.position + fallbackDir * Random.Range(minDistance, range);
+                Vector3 fallbackPos = transform.position + fallbackDir * UnityEngine.Random.Range(minDistance, range);
 
                 if (TrySetDestination(fallbackPos)) return;
             }

@@ -56,7 +56,7 @@ namespace Ludocore
         // ═══════════════════════════════════════
         private void PickNewDestination()
         {
-            var randomDirection = Random.insideUnitSphere * radius + transform.position;
+            var randomDirection = UnityEngine.Random.insideUnitSphere * radius + transform.position;
 
             if (!NavMesh.SamplePosition(randomDirection, out var hit, radius, NavMesh.AllAreas)) return;
 
