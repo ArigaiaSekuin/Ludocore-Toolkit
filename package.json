@@ -20,14 +20,24 @@
     },
     "samples": [
         {
-            "displayName": "Demo Scenes",
-            "description": "Living Entities and Trophic Cascade demo scenes with prefabs and data assets.",
-            "path": "Samples~/DemoScenes"
+            "displayName": "GD2 Lecture 1 — Tutorials",
+            "description": "Step-by-step Living Cells tutorials (in-editor).",
+            "path": "Samples~/Tutorials/GD2/Lecture1"
         },
         {
-            "displayName": "Tutorials",
-            "description": "Step-by-step Living Cells tutorials.",
-            "path": "Samples~/Tutorials"
+            "displayName": "GD2 Lecture 2 — Tutorials",
+            "description": "Step-by-step Growing Ecosystem tutorials (in-editor).",
+            "path": "Samples~/Tutorials/GD2/Lecture2"
+        },
+        {
+            "displayName": "GD2 Lecture 1 — Scenes",
+            "description": "Living Entities demo scene with prefabs and data assets.",
+            "path": "Samples~/Scenes/GD2/Lecture #1"
+        },
+        {
+            "displayName": "GD2 Lecture 2 — Scenes",
+            "description": "Growing Ecosystem demo scene with prefabs and data assets.",
+            "path": "Samples~/Scenes/GD2/Lecture #2"
         }
     ]
 }
